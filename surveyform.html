@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="
+        text/css" href="surveyformCSS.css">
+
+        <title>Survey Form freeCode Camp</title>
+        
+    </head>
+
+    <body>
+ 
+        <!-- Title and subtitle  -->
+        <div>
+            <h1 id="title">freeCodeCamp Survey </h1>
+            <p id="description">Thank you for taking the time to help us improve the plataform</p>
+            <br>
+        </div>
+
+        <!-- Starting form -->
+        <form>
+
+            <fildset class="group">
+                <!-- Ask full name -->
+                <div class="field">
+                    <label>Full name</label>
+                    <input type="text" name="name" id="name-label" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Ask email -->
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email-label" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Aks age not required -->
+                <div class="field">
+                    <label>Age (optional)</label>
+                    <input type="number" name="age" id="number-label" placeholder="Age">
+                </div>
+            </fildset>
+            
+            <!-- Ask current role -->
+            <div class="field">
+                <label for="role">Which option best describer your current role?</label>
+                <select id="dropdown" required>
+                    <option selected disabled value="">Select current role</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <!-- Ask if the person recommend freeCodeCamp to a friend -->
+            <div class="field">
+                <label>Would you recommend freeCodeCamp to a friend?</label>
+                <label>
+                    <input type="radio" name="recommend" value="Definitely">Definitely
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="maybe">Maybe
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="notSure">Not sure
+                </label>
+            </div>
+
+            <fildset class="group">
+                <!-- Ask about freeCodeCamp -->
+                <div class="field">
+                    <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+                    <select id="feature" required>
+                        <option selected disabled value="">Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+
+                <div id="check">
+                    <label>What would you like to see improved?</label>
+                    <label><input type="checkbox" class="check" value="front-end-projects">Front-end Projetcs</label>
+                    <label><input type="checkbox" class="check" value="back-end-projects">Back-end Projects</label>
+                    <label><input type="checkbox" class="check" value="data-visualization">Data Visualization</label>
+                    <label><input type="checkbox" class="check" value="challenges">Challenges</label>
+                    <label><input type="checkbox" class="check" value="open-source-community">Open Source Community</label>
+                    <label><input type="checkbox" class="check" value="gitter-help-rooms">Gitter Help Rooms</label>
+                    <label><input type="checkbox" class="check" value="videos">Videos</label>
+                    <label><input type="checkbox" class="check" value="city-meetups">City Meetups</label>
+                    <label><input type="checkbox" class="check" value="wiki">Wiki</label>
+                    <label><input type="checkbox" class="check" value="forum">Forum</label>
+                    <label><input type="checkbox" class="check" value="additional-courses">Additional Courses</label>
+                </div>
+            </fildset>
+
+            <!-- Space for comments or suggestions -->
+            <div class="field">
+                <label for="comment">Any comments or suggestions?</label>
+                <textarea rows="10" id="comment" name="comment"></textarea>
+            </div>
+
+            <!-- Button to send the fomr -->
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+
+    </body>
+    
+</html>
